@@ -1,0 +1,9 @@
+site_name: Django Rest Scaffold
+site_url: https://github.com/regisec/django-rest-scaffold/
+site_description: Django Rest Scaffold - It can be simple
+
+repo_url: https://github.com/regisec/django-rest-scaffold/
+
+markdown_extensions:
+ - toc:
+    anchorlink: True
