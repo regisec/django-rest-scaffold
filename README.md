@@ -21,3 +21,9 @@ Then add `'django_rest_scaffold'` in your `INSTALLED_APPS` settings
         ...,
         'django_rest_scaffold',
     )
+
+## Settings:
+    DJANGO_REST_SCAFFOLD_SETTINGS = {
+        'APPS_FOLDER': BASE_DIR,
+        'APPS_FOLDER_NAME': None
+    }
