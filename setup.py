@@ -10,7 +10,7 @@ here = path.abspath(path.dirname(__file__))
 
 setup(
     name='django-rest-scaffold',
-    version='0.0.1a2',
+    version='0.0.1a3',
     description='Django rest scaffold',
     url='https://github.com/regisec/django-rest-scaffold/',
     author='Régis Eduardo Crestani',

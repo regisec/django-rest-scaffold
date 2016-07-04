@@ -4,14 +4,13 @@
 """
 import os
 from django.core.management.base import BaseCommand
-from django.conf import settings
+from django_rest_scaffold.settings import DJANGO_REST_SCAFFOLD_SETTINGS as SETTINGS
 
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        path = os.path.join(settings.BASE_DIR, 'resource')
         print('Searching files to remove...')
-        for root, dir_names, file_names in os.walk(path):
+        for root, dir_names, file_names in os.walk(SETTINGS['APPS_FOLDER']):
             if root.endswith('migrations'):
                 for file_name in file_names:
                     if file_name != '__init__.py':
